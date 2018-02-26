@@ -1,18 +1,6 @@
 <?php
-if ($_POST) {
-    echo '<pre>';
-    echo 'htmlspecialchars(print_r($_POST, true));'
-    echo '</pre>';
-}
+$link = 'your value';
+echo '<input type="text" name="name1" value="'.$link.'">';
+
+echo '<a href="www.google.ie/gwt/x?u='.$link.'">Go</a>'
 ?>
-<form action="" method="post">
-    Name:  <input type="text" name="personal[name]" /><br />
-    Email: <input type="text" name="personal[email]" /><br />
-    Beer: <br />
-    <select multiple name="beer[]">
-        <option value="warthog">Warthog</option>
-        <option value="guinness">Guinness</option>
-        <option value="stuttgarter">Stuttgarter Schwabenbräu</option>
-    </select><br />
-    <input type="submit" value="submit me!" />
-</form>
